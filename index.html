@@ -23,7 +23,19 @@
 		<p>If you have a problem set that is resource intensive or just a task that needs to be performed with many machines being synchronized with each other, then Go-EMD is a solution.  It provides a framework for building a distribution easily, a GUI to monitor and view the health of the ditribution, and provides a quick and easy way to perform agile development.</p>
 
 		<h3>Where to start...</h3>
-		<p>Start using this framework by viewing the <a href="/getting_started.html">getting started</a> page.</p>
+		<p>
+			<ol>
+				<li>Download the latest release of <a href="https://github.com/go-emd/emd/releases" target="_blank">EMD</a>, <a href="https://github.com/go-emd/gui/releases" target="_blank">GUI</a>, and <a href="https://github.com/go-emd/boilerplate/releases" target="_blank">Boilerplate</a> from Github.</li>
+				<li>Add Go-EMD to the GOPATH environment variable.</li>
+				<li>Edit the Boilerplate config.json file to have the correct hostnames etc.</li>
+				<li>Compile the Boilerplate distribution.</li>
+				<li>Start the distribution by doing "go run Boilerplate/leaders/<hostname/ip>.go".</li>
+				<li>Edit the GUI config.json to match handle the Boilerplate distribution.</li>
+				<li>Open a browser to <hostname>:<config.json port> and view the distribution health.</li>
+			</ol>
+			That's it! Only seven steps and your up and running!
+		</p>
+		<p>For more information on whats actually going on here view the <a href="methodology.html">Methodology</a> page of emd.</p>
 	</div>
 </body>
 </html>
