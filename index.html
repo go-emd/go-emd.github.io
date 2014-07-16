@@ -10,45 +10,75 @@
 	<link rel="stylesheet" type="text/css" href="/main.css">
 </head>
 <body>
-	<a href="https://github.com/go-emd" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+	<a href="/" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
 
 	<div id="center">
 		<!-- Title -->
-		<h1>Go-EMD</h1>
-		<h4>- Go Language: EMbarrassingly Distributed</h6>
+		<h1><a href="http://go-emd.github.io" class="header-link">Go-EMD</a></h1>
+		<h4>- Go Language: EMbarrassingly Distributed</h4>
 
 		<!-- Description -->
-		<p><b>Go-EMD</b> allows you to write projects that will take control of a cluster of machines perform tasks that are too big or too resource consuming for one machine to do.  This is written in GoLang so it is runnable on all machines that have GoLang installed.</p>
+		<p>
+            <b>Go-EMD</b> allows you to write projects that will take control of a cluster of machines perform
+            tasks that are too big or too resource consuming for one machine to do.  This is written in GoLang
+            so it is runnable on all machines that have GoLang installed.
+        </p>
 
 		<h3>What's GoLang (Go)?</h3>
-		<p><a href="http://golang.org/" target="_blank">GoLang</a> is a programming language owned by Google built for great resource management and utilization of cores allowing for great concurrency programming. -- See more on the GoLang website to learn the language.</p>
+		<p>
+            <a href="http://golang.org/" target="_blank">GoLang</a> is a programming language owned by Google
+            built for great resource management and utilization of cores allowing for great concurrency programming.
+            -- See more on the GoLang website to learn the language.
+        </p>
 
 		<h3>Why use Go-EMD?</h3>
-		<p>If you have a problem set that is resource intensive or just a task that needs to be performed with many machines being synchronized with each other, then Go-EMD is a solution.  It provides a framework for building a distribution easily, a GUI to monitor and view the health of the ditribution, and provides a quick and easy way to perform agile development.</p>
-
-		<h4>Use Cases:</h4>
 		<p>
-			<ul>
-				<li>Big Data Systems</li>
-				<li>Operational and Functional Systems</li>
-				<li>Security Systems</li>
-			</ul>
-		</p>
+            If you have a problem set that is resource intensive or just a task that needs to be performed with many
+            machines being synchronized with each other, then Go-EMD is a solution.  It provides a framework for
+            building a distribution easily, a GUI to monitor and view the health of the distribution, and provides a
+            quick and easy way to perform agile development.
+        </p>
+
+        <h4>Use Cases:</h4>
+        <p>
+            <ul>
+                <li>Big Data Systems</li>
+                <li>Operational and Functional Systems</li>
+                <li>Security Systems</li>
+            </ul>
+        </p>
+
+        <h4>Example Implementations:</h4>
+        <p>
+            <ul>
+                <li><a href="/boilerplate">Boilerplate</a> (great for beginners)</li>
+                <li>
+                    <a href="/cluster-boilerplate">Cluster-Boilerplate</a> (great for getting started in a cluster)
+                </li>
+                <li>
+                    <a href="/twitter-word-count">Twitter-Word-Count</a> (example implementation of boilerplate)
+                </li>
+            </ul>
+        </p>
 
 		<h3>Where to start...</h3>
 		<p>
 			<ol>
-				<li>Download the latest release of <a href="https://github.com/go-emd/emd/releases" target="_blank">EMD</a>, <a href="https://github.com/go-emd/gui/releases" target="_blank">GUI</a>, and <a href="https://github.com/go-emd/boilerplate/releases" target="_blank">Boilerplate</a> from Github.</li>
+				<li>
+                    Download the latest release of <a href="https://github.com/go-emd/emd/releases" target="_blank">EMD</a>,
+                    <a href="https://github.com/go-emd/gui/releases" target="_blank">GUI</a>, and
+                    <a href="https://github.com/go-emd/boilerplate/releases" target="_blank">Boilerplate</a> from Github.
+                </li>
 				<li>Add Go-EMD to the GOPATH environment variable.</li>
 				<li>Edit the Boilerplate config.json file to have the correct hostnames etc.</li>
 				<li>Compile the Boilerplate distribution.</li>
-				<li>Start the distribution by doing "go run Boilerplate/leaders/<hostname/ip>.go".</li>
-				<li>Edit the GUI config.json to match handle the Boilerplate distribution.</li>
-				<li>Open a browser to <hostname>:<config.json port> and view the distribution health.</li>
+				<li>Start the distribution by doing "go run Boilerplate/leaders/&lt;hostname/ip&gt;.go".</li>
+				<li>Edit the GUI config.json appropriately to handle the Boilerplate distribution.</li>
+				<li>Open a browser to &lt;hostname&gt;:&lt;config.json port&gt; and view the distribution health.</li>
 			</ol>
 			That's it! Only seven steps and your up and running!
 		</p>
 		<p>For more information on whats actually going on here view the <a href="/emd">Methodology</a> page of emd.</p>
-	</div>
+    </div>
 </body>
 </html>
